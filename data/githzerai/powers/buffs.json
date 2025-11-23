@@ -52,23 +52,23 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "effect give DaArchitects minecraft:jump_boost 60 4 true"
+                    "command": "effect give @s minecraft:jump_boost 60 4 true"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "effect give DaArchitects minecraft:slow_falling 60 1 true"
+                    "command": "effect give @s minecraft:slow_falling 60 1 true"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "effect give DaArchitects minecraft:speed 60 2 true"
+                    "command": "effect give @s minecraft:speed 60 2 true"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "effect give DaArchitects minecraft:resistance 60 2 true"
+                    "command": "effect give @s minecraft:resistance 60 2 true"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "effect give DaArchitects minecraft:invisibility 60 1 true"
+                    "command": "effect give @s minecraft:invisibility 60 1 true"
                 },
                 {
                     "type": "origins:change_resource",
