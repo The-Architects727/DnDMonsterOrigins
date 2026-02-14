@@ -18,20 +18,15 @@
         "type": "origins:action_over_time",
         "interval": 6000,
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_tpcharges",
-                    "compare_to": 5,
-                    "comparison": "<"
-                }
-            ]
+            "type": "origins:resource",
+            "resource": "githyanki:teleport_tpcharges",
+            "compare_to": 5,
+            "comparison": "<"
         },
-        "rising_action": {
+        "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_tpcharges",
-            "operation": "set",
+            "resource": "githyanki:teleport_tpcharges",
+            "operation": "add",
             "change": 5
         }
     },
@@ -46,7 +41,7 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "*:*_tpcharges",
+                    "resource": "githyanki:teleport_tpcharges",
                     "compare_to": 0,
                     "comparison": ">"
                 },
@@ -74,7 +69,7 @@
                     "type": "origins:change_resource",
                     "change": -1,
                     "operation": "add",
-                    "resource": "*:*_tpcharges"
+                    "resource": "githyanki:teleport_tpcharges"
                 }
             ]
         }
